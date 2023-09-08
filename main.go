@@ -6,10 +6,10 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-var router = chi.NewRouter()
+var Router = chi.NewRouter()
 
 func init() {
-	router.Get("/", rootHandler)
+	Router.Get("/", rootHandler)
 
 }
 
