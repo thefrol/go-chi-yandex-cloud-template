@@ -32,8 +32,8 @@ router.Get(/info, infoHandler)
     ```openapi
     openapi: 3.0.0
     info:
-    title: Sample API
-    version: 1.0.0
+      title: Sample API
+      version: 1.0.0
     paths:
       /{url+}:
         x-yc-apigateway-any-method:
