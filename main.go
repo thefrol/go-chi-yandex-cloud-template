@@ -10,7 +10,6 @@ var Router = chi.NewRouter()
 
 func init() {
 	Router.Get("/", rootHandler)
-
 }
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
