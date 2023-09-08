@@ -35,15 +35,15 @@ router.Get(/info, infoHandler)
     title: Sample API
     version: 1.0.0
     paths:
-    /{url+}:
+      /{url+}:
         x-yc-apigateway-any-method:
-        parameters:
-        - explode: false
+          parameters:
+          - explode: false
             in: path
             name: url
             required: false
             style: simple
-        x-yc-apigateway-integration:
+          x-yc-apigateway-integration:
             function_id: твой_идентификатор
             tag: $latest
             type: cloud_functions
